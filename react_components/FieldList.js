@@ -1,23 +1,20 @@
 /** @jsx React.DOM */
 
-var React = require("react");
-var Field = require("./Field");
+const React = require('react')
+const Field = require('./Field')
 
-
-var FieldList = React.createClass({
-  render: function() {
+const FieldList = React.createClass({
+  render () {
     var fields = this.props.fields.map(function (field) {
-      return (
-        <Field inputMarkup={field} />
-      );
-    });
+      return (<Field inputMarkup={field}/>)
+    })
 
     return (
-      <div className="field-list field-input">
+      <div className='field-list field-input'>
         {fields}
       </div>
-    );
+    )
   }
-});
+})
 
-module.exports = FieldList;
+module.exports = FieldList

@@ -1,1 +1,1 @@
-module.exports = require('./DynamicFieldsAddition');
+module.exports = require('./DynamicFieldsAddition')
